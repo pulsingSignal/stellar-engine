@@ -1,6 +1,14 @@
 # Changelog
 
 
+## [5.2.1](https://github.com/google/stellar-engine/compare/v5.2.0...v5.2.1) (2026-11-03)
+
+
+### Bug Fixes
+
+* **cli:** map REST Forbidden and Unauthorized errors to access denied ([#383](https://github.com/google/stellar-engine/issues/383)) ([74a2d0d](https://github.com/google/stellar-engine/commit/74a2d0ddcd0ab0566663c76292f181085089341b))
+  * The preflight facade in the `cli/src/stellar_engine/gcp/live.py` module translated only the gRPC `PermissionDenied` and `Unauthenticated` classes into its access denied error.
+
 ## [5.2.0](https://github.com/google/stellar-engine/compare/v5.1.1...v5.2.0) (2026-10-31)
 
 
